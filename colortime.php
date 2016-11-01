@@ -28,7 +28,6 @@
 		elseif($date == 15){ echo $one; }
 		elseif($date == 16){ echo $one; }
 		elseif($date == 17){ echo $one; }
-		elseif($date == 18){ echo $one; }
 		else{ echo $two; }
 		
 	}
