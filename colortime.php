@@ -1,35 +1,26 @@
 <?php
-	
 	/**
+	 * s1.2 | 09.11.2016
 	 *
 	 * Ugur KILCI
-	 *
 	 * twitter@ugur2nd
 	 * github@ugurkilci
 	 *
-	 * s1.1 | 31.10.2016
-	 *
+	 * Forked and edits by:
+	 * Matthias SCHAFFER
+	 * @fellwell5
 	 */
 	
-	date_default_timezone_set('Europe/Istanbul'); // Timezones
+	// You can set your timezone, but mostly the server timezone will to the thing.
+	#date_default_timezone_set('Europe/Istanbul'); // Timezone
 	
-	function colortime($one, $two){ // Daytime, Night
-		
-		$date = date("H"); // Time
-		
-		if($date == 07){ echo $one; }
-		elseif($date == 08){ echo $one; }
-		elseif($date == 09){ echo $one; }
-		elseif($date == 10){ echo $one; }
-		elseif($date == 11){ echo $one; }
-		elseif($date == 12){ echo $one; }
-		elseif($date == 13){ echo $one; }
-		elseif($date == 14){ echo $one; }
-		elseif($date == 15){ echo $one; }
-		elseif($date == 16){ echo $one; }
-		elseif($date == 17){ echo $one; }
-		else{ echo $two; }
-		
+	function colortime($day, $night){ // Daytime, Night
+		$hour = date("H");
+		if($hour >= 7 && $hour <= 18){
+			echo $day;
+		}else{
+			echo $night;
+		}
 	}
 	
 ?>
