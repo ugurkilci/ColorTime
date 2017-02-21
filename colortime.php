@@ -22,5 +22,14 @@
 			echo $night;
 		}
 	}
+
+	function _colortime($day, $night){ // Daytime, Night
+		$hour = date("H");
+		if($hour >= 7 && $hour <= 18){
+			echo $night;
+		}else{
+			echo $day;
+		}
+	}
 	
 ?>
