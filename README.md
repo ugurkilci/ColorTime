@@ -7,6 +7,10 @@ The color of the time
 The first daytime variable, the second variable night.<br />
 <code><?php echo colortime($daytime, $night); // Daytime, Night ?></code>
 
+<strong>Invert the operations</strong><br />
+Invert the operations with the _colortime() function.<br />
+<code><?php echo _colortime($daytime, $night); // Daytime, Night -> Night, Daytime ?></code>
+
 07:00 to 18:00 daytime. Other times are at night.
 
 <strong>Other Examples?</strong><br />
